@@ -76,7 +76,7 @@
         WinDivertClose(handle);
     }
 
-    void runBlink(int mode, int capture_delay, int release_delay) { //Capture delay and release delay are variables use for fakelag
+    void runBlink(int mode, int capture_delay, int release_delay) { //Capture delay and release delay are variables used for fakelag
         if (!blink_vectors.blink_loop) {
             blink_vectors.blink_loop = true;
             std::thread(soundSignal).detach();
