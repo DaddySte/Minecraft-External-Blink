@@ -5,7 +5,7 @@
 
 This repository contains a code module designed to implement a blink functionality for Minecraft clients. The code module serves an educational purpose and offers an opportunity to explore an alternative movement mechanic in Minecraft.
 **IMPORTANT** To code this blink source it has been used Windivert. Check the repository: 
-[![WinDivert](https://img.shields.io/badge/Any-purple)](https://github.com/basil00/Divert)
+[![WinDivert](https://img.shields.io/badge/Windivert-purple)](https://github.com/basil00/Divert)
 
 ## Features
 
