@@ -1,6 +1,6 @@
 #include "Blink.h"
 
-//Example on How To Use
+//Example on How To Use.
 
 int main() {
 
