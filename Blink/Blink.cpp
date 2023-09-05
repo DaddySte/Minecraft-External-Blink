@@ -34,6 +34,10 @@
             break;
         }
 
+        if(handle == INVALID_HANDLE_VALUE){
+            blink_vectors.blink_loop = false;
+        }
+
         while (blink_vectors.blink_loop) {
 
             if (WinDivertRecv(handle, packet, sizeof(packet), &packetLen, &addr)) { //Capture packets
@@ -53,10 +57,21 @@
                 for (int i = 0; i < blink_vectors.packets.size(); i++) {
                     WinDivertSend(handle, blink_vectors.packets[i].c_str(), blink_vectors.packet_len[i], NULL, &blink_vectors.addr[i]);
                 }
+                
                 blink_timer = 0;
-                blink_vectors.packets.clear();
-                blink_vectors.packet_len.clear();
-                blink_vectors.addr.clear();
+                
+                if(blinks_vectors.packets.size() != 0){
+                    blink_vectors.packets.clear();
+                }
+
+                if(blink_vectors.packet_len.size() =! 0){
+                    blink_vectors.packet_len.clear();
+                }
+
+                if(blink_vectors.addr.size() =! 0){
+                    blink_vectors.addr.clear();
+                }
+                
                 WinDivertClose(handle);
                 std::this_thread::sleep_for(std::chrono::milliseconds(release_delay));
                 handle = WinDivertOpen(blink_vectors.blink_one.c_str(), WINDIVERT_LAYER_NETWORK, 0, 0);
