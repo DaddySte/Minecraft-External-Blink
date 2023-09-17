@@ -25,14 +25,6 @@ Follow these steps to incorporate the blink module into your Minecraft client en
 
 This project is designed exclusively for educational and experimental purposes. The code module should not be employed in production environments, official servers, or any context that might compromise the integrity of Minecraft's gameplay experience. Exercise ethical use and uphold the spirit of the Minecraft community.
 
-## Support
-
-If you find this educational resource intriguing and wish to contribute to its advancement:
-
-[![Support Me](https://img.shields.io/badge/Support%20Me-Donate-green.svg)](https://streamelements.com/disabler/tip)
-
-Your support is highly valued and encourages the creation of more educational content.
-
 ## License
 
 This project is licensed under the MIT License - view the [LICENSE](LICENSE) file for details.
