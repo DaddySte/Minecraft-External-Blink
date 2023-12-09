@@ -60,15 +60,15 @@
                 
                 blink_timer = 0;
                 
-                if(blinks_vectors.packets.size() != 0){
+                if(blink_vectors.packets.size() != 0){
                     blink_vectors.packets.clear();
                 }
 
-                if(blink_vectors.packet_len.size() =! 0){
+                if(blink_vectors.packet_len.size() != 0){
                     blink_vectors.packet_len.clear();
                 }
 
-                if(blink_vectors.addr.size() =! 0){
+                if(blink_vectors.addr.size() != 0){
                     blink_vectors.addr.clear();
                 }
                 
